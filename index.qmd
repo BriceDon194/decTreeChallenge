@@ -348,7 +348,7 @@ The zip codes are categorial values. They are meant to be used to group items to
 
 2. **R vs Python Implementation Differences:** When modelling zip code as a categorical variable, the output tree and feature importance would differ quite significantly had you used R as opposed to Python. Investigate why this is the case.  What does R offer that Python does not? Which language would you say does a better job of modelling zip code as a categorical variable? Can you quote the documentation at [https://scikit-learn.org/stable/modules/tree.html](https://scikit-learn.org/stable/modules/tree.html) suggesting a weakness in the Python implementation? If so, please provide a quote from the documentation.
 
-
+The sckit learning module itself (the one we installed) does not suport categorial vaiables. In section 1.10, the 4th bullet point under advantages states: "Able to handle both numerical and categorical data. However, the scikit-learn implementation does not support categorical variables for now." Since this is the method we are using in pyton, it does not work as well as R. R allows for categorial variables to be used in the decision tree model. There is a feature of R that is not available in Python: "Categorical variables are supported in R (rpart package)."
 
 3. **Are There Any Suggestions for Implementing Decision Trees in Python With Prioper Categorical Handling?** Please poke around the Internet (AI is not as helpful with new libraries) for suggestions on how to implement decision trees in Python with better (i.e. not one-hot encoding) categorical handling.  Please provide a link to the source and a quote from the source.  There is not right answer here, but please provide a thoughtful answer, I am curious to see what you find.
 
